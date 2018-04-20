@@ -8,6 +8,7 @@
 		<version>1.0.2.RELEASE</version>
 	</parent>
 	<artifactId>LaboratirioSCM</artifactId>
+	<packaging>war</packaging>
 	<groupId>co.edu.carren26</groupId>
 	<name>Spring Boot Tomcat Sample</name>
 	<description>Spring Boot Tomcat Sample</description>
@@ -28,6 +29,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
