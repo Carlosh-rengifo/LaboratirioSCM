@@ -43,6 +43,20 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://localhost:8081/repository/maven-releases</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://localhost:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -56,7 +70,7 @@
 				<configuration>
 					<server>mytomcat</server>
 					<username>tomcat</username>
-                    <password>tomcat123</password>
+					<password>tomcat123</password>
 				</configuration>
 			</plugin>
 		</plugins>
